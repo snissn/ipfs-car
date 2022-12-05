@@ -41,6 +41,7 @@ export async function packToFs ({ input, output, blockstore: userBlockstore, has
 
     return {root, filename}
   }
+  writable.close()
 
   return { root, filename: output }
 }
